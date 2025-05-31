@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+/*GENERAL DE TODA LA PAGINA*/
+*{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    width: 235px;
+}
+
+body{
+    width: 1185px;
+    margin: auto;
+    background-color: #214A3D;
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+header{
+    height: 104px;
+    background-color: hsl(68.57,28.77%,85.69%);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+    header nav a{
+        margin: 18px;
+        color: hsl(99.13,31.94%,28.24%);
+        text-decoration: none;
+
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+main{
+    min-height: 700px;
+    background-color:  hsl(69, 13%, 72%);
+}
+
+footer{
+    height: 120px;
+    background-color:hsl(68.57,28.77%,85.69%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    footer p{
+        color: hsl(99.13,31.94%,28.24%);
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+/*Branch Inicio*/
+
+#hero-banner{
+    height: 512px;
+    margin: auto;
+    
+    background-image: url('../img/hero.png');
+    
+    display: flex;
+    align-items: center;
+
+}
+
+#donar h2{
+    margin-top: 40px;
+    margin-left: 16px;
+    color: hsl(101.38,26.61%,21.37%);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+    #donar p{
+        margin: 24px 16px;
+        color: hsl(101.38,26.61%,21.37%);
+        font-weight: bold;
+        font-size: 19px;
+    }
+
+/*Boton de quiero adoptar*/
+#boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+#boton p{
+    text-transform: uppercase;
+    color: hsl(101.38,26.61%,21.37%);
+    font-weight: 800;
+    font-size: 25px;
+   
+}
+#boton a button{
+    cursor: pointer;
+    margin-top: 10px;
+    
+    font-size: 15px;
+    font-weight: 600;
+    color: #214A3D;
+
+    padding: 15px;
+    border:#214A3D solid 2px;
+    border-radius: 20px;
+    background-color: #E2E5D0;
+}
+/*Efecto para el boton de quiero adoptar*/
+#boton a button:hover{
+    transform: scale(1.2);
+}
+
+/*Perritos que estan en adopción*/
+
+#adoptar{
+    margin-top: 30px;
+    padding: 24px 0px;
+    height: 540px;
+    display: flex;
+    justify-content: space-evenly;
+    }
+        #adoptar article{
+            width: 270px;
+            padding: 15px;
+            background-color: #214A3D;
+        }
+
+/*Fin Branch Inicio*/
+
+
+/*Branch Adopta*/       
+
+#hero-banner1{
+    height: 480px;
+    margin: auto;
+    
+    background-image: url('../img/hero1.png');
+    
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+#info-adoptar{
+    font-size: 20px;
+    color: #214A3D;
+}
+
+/*Formulario de adopción*/
+
+#formulario{
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 30px 50px 0px 50px;
+    height: 700px;
+}
+    #formulario legend{
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    #formulario fieldset{
+        width: 400px;
+        padding: 30px;
+        border: 2px solid #214A3D;
+        border-radius: 15px;
+        background-color: hsl(68.57,28.77%,85.69%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        color: black;    
+    }
+    #formulario input[type="text"], input[type="email"], input[type="number"]{
+        width: 400px;
+        padding: 8px 12px;
+        margin: 10px 0px;
+        box-sizing: border-box; /*para que el tamaño total (w y h) invluya el padding y el borde*/
+    }
+
+    #formulario input[type="submit"]{
+        margin-top: 20px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    #formulario input[type="submit"]:hover {
+        background-color: #0b7100;
+    }
+
+/*Fin Branch Adopta*/
